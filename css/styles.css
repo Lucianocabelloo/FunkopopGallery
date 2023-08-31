@@ -23,13 +23,17 @@ main{
     padding: 32px;
 }   
 
-h2, p{
+h2,p{
 font-family: 'Rowdies', cursive;
 text-align: center;
 color: white;
 text-shadow: 3px 2px 3px rgba(0,0,0,0.59);
 width: 70ch;
 margin: auto;
+}
+
+h3{
+    display: none;
 }
 
 .header-GaleriaFunkopop{
@@ -67,7 +71,10 @@ img{
     -webkit-box-shadow: 5px 8px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 5px 8px 5px 0px rgba(0,0,0,0.75);
     image-rendering: crisp-edges; 
+    position: relative;
 }
+
+
 
 img:hover{
     filter: none;
@@ -89,6 +96,16 @@ img:hover{
     }
     h2, p{
         width: auto;
+
+    }
+    h3{
+        display: block;
+        color: rgb(255, 8, 8);
+        text-align: center;
+        font-size: 30px;
+        font-family: 'Rowdies', cursive;
+        margin: 16px;
+        text-shadow: 3px 3px 3px black;
     }
 }
 
