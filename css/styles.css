@@ -1,0 +1,89 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    max-width: 100vw;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(../img//fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}   
+
+.header-GaleriaFunkopop{
+    padding: 25px;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.section-GaleriaFunkopop{
+    width: 100%;
+}
+
+.galeria-FunkoPop{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 32px;
+    gap: 20px;
+    position: relative;
+
+}
+
+
+
+img{
+    border: 1px solid black;
+    border-radius: 25px;
+    width: 20%;
+    filter: blur(2px);
+    transition: filter 1s, transform 1s, z-index 0.5s;
+    cursor: pointer;
+    image-rendering: crisp-edges; 
+}
+
+img:hover{
+    filter: none;
+    transform: scale(1.3);
+    z-index: 9999;
+}
+
+
+
+
+@media (max-width: 767.98px){
+    img{
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px){
+    img{
+        width: 33%;
+    }
+}
+
+@media (min-width: 1444px){
+    img{
+        width: 20%;
+    }
+}
+
+
+footer{
+    padding: 25px;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
